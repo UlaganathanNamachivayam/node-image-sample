@@ -10,6 +10,8 @@ COPY package.json /usr/src/app
 RUN npm install
 
 COPY . /usr/src/app
+COPY test /usr/src/app/test
+COPY script /usr/src/app/script
 
 # Expose the application port and run application
 EXPOSE 5000
